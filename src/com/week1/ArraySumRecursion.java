@@ -26,6 +26,7 @@ class ArraySumRecursion {
         }
 
         System.out.println("Sum of array = " + sumArray(arr, n));
+        sc.close();
     }
 }
 

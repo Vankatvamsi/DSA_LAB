@@ -1,4 +1,4 @@
-package com.week1;
+  package com.week1;
 
 import java.util.Scanner;
 
@@ -18,8 +18,9 @@ class SumOfDigitsFor
         for (; n > 0; n = n / 10) {
             sum = sum + (n % 10);
         }
-
         System.out.println("Sum of digits = " + sum);
+        sc.close();
     }
+    
 }
 
