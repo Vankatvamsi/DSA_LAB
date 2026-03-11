@@ -95,9 +95,12 @@ public class CircularLinkedList {
 	}
 	public void display() {
 		Node temp=head;
-		while(temp.next!=head) {
+		while(true) {
 			System.out.print(temp.data+" -> ");
 			temp=temp.next;
+			
+			if(temp == head)
+				break;
 		}
 		System.out.println();
 	}

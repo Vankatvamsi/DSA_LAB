@@ -8,32 +8,25 @@ class MergeSort
         int n2 = high - mid;
         int[] L = new int[n1];
         int[] M = new int[n2];
-        for (int i = 0; i < n1; ++i) 
-        {
+        for (int i = 0; i < n1; ++i) {
             L[i] = array[low + i];
         }
-        for (int j = 0; j < n2; ++j)
-        {
+        for (int j = 0; j < n2; ++j) {
         	M[j] = array[mid + 1 + j];
         }
         int i = 0, j = 0, k = low;
-        while (i < n1 && j < n2)
-        {
-            if (L[i] <= M[j])
-            {
+        while (i < n1 && j < n2) {
+            if (L[i] <= M[j]) {
                 array[k++] = L[i++];
             } 
-            else 
-            {
+            else {
                 array[k++] = M[j++];
-            }
+            } 
         }
-        while (i < n1) 
-        {
+        while (i < n1) {
             array[k++] = L[i++];
         }
-        while (j < n2) 
-        {
+        while (j < n2) {
             array[k++] = M[j++];
         }
     }
